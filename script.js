@@ -9,7 +9,30 @@ mydocument[5].style.color = 'green';
 
 let heading=document.getElementsByTagName('h1');
 heading[0].innerHTML='Main Content Here';
-let parg=document.querySelectorAll(' main p');
+
+let nav=document.getElementsByTagName('nav')[0];
+//link 1 is the first children
+nav.insertAdjacentHTML('afterbegin','<a href="#">Link 1</a>');
+//another way for adding link1
+/*let a=document.querySelectorAll('nav a')[0];
+a.insertAdjacentHTML('beforebegin','<a href="#">Link 1</a>');*/
+
+//adding link 4
+let a=document.querySelectorAll('nav a')[2];
+a.insertAdjacentHTML('afterend','<a href="#">Link 4</a>');
+
+//adding link7
+let link7=document.querySelectorAll('nav a')[5];
+link7.insertAdjacentHTML('afterend','<a href="#">Link 7</a>');
+
+
+/*let parg=document.querySelectorAll('main p');
 parg[0].style.color='purple';
 parg[1].style.color='purple';
-parg[2].style.color='purple';
+parg[2].style.color='purple';*/
+
+
+let parg=document.querySelectorAll('main p');
+for(let i=0;i<parg.length;i++){
+    parg[i].style.color='purple';
+}
