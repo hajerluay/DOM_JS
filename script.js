@@ -26,12 +26,13 @@ let link7=document.querySelectorAll('nav a')[5];
 link7.insertAdjacentHTML('afterend','<a href="#">Link 7</a>');
 
 
+//to chang all p color in main
 /*let parg=document.querySelectorAll('main p');
 parg[0].style.color='purple';
 parg[1].style.color='purple';
 parg[2].style.color='purple';*/
 
-
+//another to change p color in main
 let parg=document.querySelectorAll('main p');
 for(let i=0;i<parg.length;i++){
     parg[i].style.color='purple';
